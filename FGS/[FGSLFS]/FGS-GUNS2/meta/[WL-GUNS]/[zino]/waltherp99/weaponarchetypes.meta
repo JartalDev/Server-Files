@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>w_pi_waltherp99_mag1</modelName>
+			<txdName>w_pi_waltherp99_mag1</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="300"/>
+		</Item>
+		<Item>
+			<modelName>w_pi_waltherp99</modelName>
+			<txdName>w_pi_waltherp99</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>w_at_pi_waltherp99_supp_2</modelName>
+			<txdName>w_at_pi_waltherp99_supp_2</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="300"/>
+		</Item>
+		<Item>
+			<modelName>w_at_pi_waltherp99_flsh</modelName>
+			<txdName>w_at_pi_waltherp99_flsh</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="300"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>
+

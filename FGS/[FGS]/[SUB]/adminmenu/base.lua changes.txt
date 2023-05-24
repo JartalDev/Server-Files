@@ -1,0 +1,31 @@
+place this in your base.lua
+
+
+MySQL.SingleQuery([[
+CREATE TABLE IF NOT EXISTS vrp_user_notes (
+note_id INT AUTO_INCREMENT,
+user_id INT,
+text VARCHAR(250),
+admin_name VARCHAR(250),
+admin_id INT,
+PRIMARY KEY (note_id)
+)
+]])
+
+
+and this for having cars "baller locked"
+
+
+MySQL.SingleQuery([[
+CREATE TABLE IF NOT EXISTS vrp_user_vehicles(
+user_id INTEGER,
+vehicle VARCHAR(100),
+vehicle_plate varchar(255) NOT NULL,
+rented BOOLEAN NOT NULL DEFAULT 0,
+rentedid varchar(200) NOT NULL DEFAULT '',
+rentedtime varchar(2048) NOT NULL DEFAULT '',
+locked BOOLEAN NOT NULL DEFAULT 0,
+CONSTRAINT pk_user_vehicles PRIMARY KEY(user_id,vehicle),
+CONSTRAINT fk_user_vehicles_users FOREIGN KEY(user_id) REFERENCES vrp_users(id) ON DELETE CASCADE
+);
+]])

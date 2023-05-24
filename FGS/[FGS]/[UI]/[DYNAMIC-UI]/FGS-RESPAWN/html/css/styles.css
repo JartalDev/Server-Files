@@ -1,0 +1,128 @@
+*{  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  user-select: none;
+} 
+ 
+body {  
+  color: white;
+  font-family: 'Spartan', sans-serif;
+  overflow: hidden;  
+  
+}
+
+.content-ui { 
+  display: none;  
+  zoom: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}    
+ 
+.title { 
+  font-size: 1.7rem;
+}
+ 
+.box-spawn { 
+  display: flex;
+  width: 800px; 
+  padding-bottom: 30px; 
+  padding-right: 10px; 
+  overflow-x: auto;
+} 
+ 
+.area-spawn { 
+  min-width: 140px;
+  min-height: 230px; 
+/*   border-radius: 10px;  */
+  background-image: url(../border-ui/Rectangle.png);
+  border-radius: 10px;
+  margin-left: 10px; 
+  margin-top: 15px;    
+ 
+}   
+ 
+
+.area-spawn .select-button .select {   
+  text-align: center;  
+  line-height: 32px;
+  color: black;
+  margin: -10% auto;  
+}
+ 
+.area-spawn .select-button .select button {   
+  all: unset;
+  width: 105px;
+  height: 32px; 
+  border-radius: 5px;
+  background-color: #a200ff;
+  box-shadow: 3px 100px 250px 3px rgba(243, 202, 54, 0.36);
+}
+.sub-card-spawn {  
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+}  
+ 
+.sub-card-spawn .sub-card {  
+  width: 129px;
+  height: 190px;   
+  border-radius: 10px;  
+  text-align: center; 
+  position: relative;
+}
+ 
+
+       
+.sub-card .name-of-place {  
+   position: absolute;  
+   transition: .5s ease; 
+   opacity: 0;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%); 
+   font-weight: 500;    
+   font-size: 1.1rem;   
+   color: rgba(255, 255, 255, 0.973);
+}
+
+.name-of-place:hover {  
+  opacity: 1;
+}
+ 
+.sub-card-spawn .sub-card img {  
+  width: 129px;
+  height: 190px;
+  object-fit: cover; 
+  border-radius: inherit;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #a200ff;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a200ff;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #a200ff; 
+} 

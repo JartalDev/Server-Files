@@ -1,0 +1,11 @@
+{
+    "webhookUrl": "webhook here",
+    "framework": "none",
+    "commandName": "screenshot",
+    "commandPermission": "vrp permission here",
+    "hiddenIdentifiers": ["ip"],
+    "screenshotOptions": {
+        "encoding": "png",
+        "quality": 1.0
+    }
+}

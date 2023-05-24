@@ -1,0 +1,922 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+   scroll-behavior: smooth !important;
+   user-select: none !important;
+   font-family: 'Poppins', sans-serif;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.mainscreen {
+    display:none;
+    position: fixed;
+    left: 50%; 
+    top: 50%; 
+    width: 1360px;
+    height: 800px;
+    background-color: #1a1a22;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.sidebar {
+   width: 280px;
+   height: 100%;
+   position: fixed;
+   overflow-x: hidden;
+   transition: width 0.5s;
+}
+
+.sidebar-user {
+    margin-top: 53px;
+    margin-left: 75px;
+}
+
+.sidebar-user img {
+    margin-left: 30px;
+}
+
+.sidebar-user p {
+    margin: 0 auto;
+    font-size: 24px;
+    color: white;
+}
+
+.sidebar-menu {
+   margin-top: 6.5rem;
+}
+
+.sidebar-menu ul {
+   margin-bottom: 1.5rem;
+}
+
+.sidebar-menu li a {
+   position: relative;
+   color: #efefef;
+   font-size: 1rem;
+   display: block;
+   align-items: center;
+   margin-left: 60px;
+   margin-bottom: 20px;
+}
+
+.sidebar-menu li a:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.sidebar-menu li a .icon {
+   position: relative;
+   margin-right: 20px;
+}
+
+.sidebar-menu li a .title {
+   position: relative;
+   padding-left: 10px;
+   height: 60px;
+   line-height: 60px;
+   font-size: 1.3rem;
+   margin-right: 0.8rem;
+   white-space: normal;
+   bottom: 3.5px;
+}
+
+.sidebar-menu li.active span {
+    color: #fb0d5a ;
+}
+
+.sidebar-menu li.active path {
+    fill: #fb0d5a ;
+}
+
+.line {
+    margin-left: 281px;
+    position: absolute;
+    width: 2.5px;
+    height: 100%;
+    background-color: #ffffff09;
+}
+
+
+.main {
+    position: absolute;
+    display: block;
+    margin-left: 281px;
+}
+
+.main .boxy  {
+    color: white;
+    display: flex;
+}
+
+.main .boxBalance {
+    margin-top: 53px;
+    margin-left: 40px;
+    width: 425px;
+    height: 176px;
+    background-color: #353745;
+    border-radius: 25px;
+}
+
+.main .boxBalance h1 {
+    padding-top: 0.3em;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main .boxBalance p {
+    color: #C5C5C5;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main .boxBalance .boxBalance-Title {
+    display: flex;
+}
+
+.main .boxBalance .ptitle {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 15px;
+    float: left;
+    display: flex;
+}
+
+.main .boxBalance .p1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 15px;
+    float: left;
+}
+
+.main .boxBalance .p2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 75px;
+    margin-top: 15px;
+    float: right;
+}
+
+.main .boxQuick {
+    margin-left: 43px;
+    margin-top: 60px;
+    width: 933px;
+    height: 446px;
+    background-color: #353745;
+    color: white;
+    border-radius: 25px;
+}
+
+.main .boxQuick .titleQuick {
+    display: flex;
+}
+
+.main .boxQuick .titleQuick .boxQ {
+    float: left;
+    width: 280px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.main .boxQuick .titleQuick .boxQ {
+    float: right;
+    width: 280px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.main .boxQuick .titleQuick span {
+    font-weight: 500;
+    font-size: 31px;
+}
+
+#secondBox {
+    margin-left: 100px;
+}
+
+#firstBox {
+    margin-left: 175px;
+}
+
+.main .boxQuick .boxQuicks {
+    display: flex;
+}
+
+.main .boxQuick .boxQuicks .leftQuick .boxx {
+    float: left;
+    width: 280px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background: #3E4054;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.main .boxQuick .boxQuicks .leftQuick .boxx:hover {
+    background: #4a4c61;
+}
+
+.main .boxQuick .boxQuicks .rightQuick .boxx {
+    float: right;
+    width: 280px;
+    height: 50px;
+    margin-right: 100px;
+    margin-top: 50px;
+    background: #3E4054;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.main .boxQuick .boxQuicks .rightQuick .boxx:hover {
+    background: #4a4c61;
+}
+
+.main .boxQuick .boxQuicks span {
+    font-weight: 500;
+    font-size: 31px;
+}
+
+
+
+
+
+
+
+
+.deposit {
+    position: absolute;
+    display: none;
+    margin-left: 281px;
+}
+
+.deposit .boxy  {
+    color: white;
+    display: flex
+}
+
+.deposit .boxBalance {
+    margin-top: 53px;
+    margin-left: 40px;
+    width: 425px;
+    height: 176px;
+    background-color: #353745;
+    border-radius: 25px;
+}
+
+.deposit .depositInput {
+    color: white;
+}
+
+.deposit .boxBalance input {
+    padding-top: 0.6em;
+    /* padding-left: 2.5em; */
+    width: 100%;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+}
+
+.deposit .boxBalance input::-webkit-outer-spin-button,
+.deposit .boxBalance input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.deposit .boxBalance input::placeholder {
+    color: white;
+    -webkit-appearance: none; 
+}
+
+.deposit .boxBalance p {
+    color: #C5C5C5;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.deposit .boxBalance .boxBalance-Title {
+    display: flex;
+}
+
+.deposit .boxBalance .ptitle {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 15px;
+    float: left;
+    display: flex;
+}
+
+.deposit .boxBalance .p1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 15px;
+    float: left;
+}
+
+.deposit .boxBalance .p2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 75px;
+    margin-top: 15px;
+    float: right;
+}
+
+.deposit .boxQuick {
+    margin-left: 43px;
+    margin-top: 60px;
+    width: 933px;
+    height: 446px;
+    background-color: #353745;
+    color: white;
+    border-radius: 25px;
+}
+
+.deposit .boxQuick .titleQuick {
+    display: flex;
+}
+
+.deposit .boxQuick .titleQuick .boxQ {
+    float: left;
+    width: 280px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.deposit .boxQuick .titleQuick .boxQ {
+    float: right;
+    width: 280px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.deposit .boxQuick .titleQuick span {
+    font-weight: 500;
+    font-size: 31px;
+}
+
+.deposit #secondBox {
+    margin-left: 320px;
+}
+
+.deposit .boxQuick .boxQuicks {
+    display: flex;
+}
+
+.deposit .boxQuick .boxQuicks .leftQuick .boxx {
+    float: left;
+    width: 280px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background: #3E4054;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.deposit .boxQuick .boxQuicks .leftQuick .boxx:hover {
+    background: #6d7093;
+}
+
+.deposit .boxQuick .boxQuicks .rightQuick .boxx {
+    float: right;
+    width: 280px;
+    height: 50px;
+    margin-right: 100px;
+    margin-top: 50px;
+    background: #3E4054;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.deposit .boxQuick .boxQuicks .rightQuick .boxx:hover {
+    background: #6d7093;
+}
+
+.deposit .boxQuick .boxQuicks span {
+    font-weight: 500;
+    font-size: 31px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.withdraw {
+    position: absolute;
+    display: none;
+    margin-left: 281px;
+}
+
+.withdraw .boxy  {
+    color: white;
+    display: flex
+}
+
+.withdraw .boxBalance {
+    margin-top: 53px;
+    margin-left: 40px;
+    width: 425px;
+    height: 176px;
+    background-color: #353745;
+    border-radius: 25px;
+}
+
+.withdraw .depositInput {
+    color: white;
+}
+
+.withdraw .boxBalance input {
+    padding-top: 0.6em;
+    /* padding-left: 2.5em; */
+    width: 100%;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+}
+
+.withdraw .boxBalance input::-webkit-outer-spin-button,
+.withdraw .boxBalance input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.withdraw .boxBalance input::placeholder {
+    color: white;
+    -webkit-appearance: none; 
+}
+
+.withdraw .boxBalance p {
+    color: #C5C5C5;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.withdraw .boxBalance .boxBalance-Title {
+    display: flex;
+}
+
+.withdraw .boxBalance .ptitle {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 15px;
+    float: left;
+    display: flex;
+}
+
+.withdraw .boxBalance .p1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 15px;
+    float: left;
+}
+
+.withdraw .boxBalance .p2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 75px;
+    margin-top: 15px;
+    float: right;
+}
+
+.withdraw .boxQuick {
+    margin-left: 43px;
+    margin-top: 60px;
+    width: 933px;
+    height: 446px;
+    background-color: #353745;
+    color: white;
+    border-radius: 25px;
+}
+
+.withdraw .boxQuick .titleQuick {
+    display: flex;
+}
+
+.withdraw .boxQuick .titleQuick .boxQ {
+    float: left;
+    width: 280px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.withdraw .boxQuick .titleQuick .boxQ {
+    float: right;
+    width: 280px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.withdraw .boxQuick .titleQuick span {
+    font-weight: 500;
+    font-size: 31px;
+}
+
+.withdraw #secondBox {
+    margin-left: 320px;
+}
+
+.withdraw .boxQuick .boxQuicks {
+    display: flex;
+}
+
+.withdraw .boxQuick .boxQuicks .leftQuick .boxx {
+    float: left;
+    width: 280px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background: #3E4054;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.withdraw .boxQuick .boxQuicks .leftQuick .boxx:hover {
+    background: #6d7093;
+}
+
+.withdraw .boxQuick .boxQuicks .rightQuick .boxx {
+    float: right;
+    width: 280px;
+    height: 50px;
+    margin-right: 100px;
+    margin-top: 50px;
+    background: #3E4054;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.withdraw .boxQuick .boxQuicks .rightQuick .boxx:hover {
+    background: #6d7093;
+}
+
+.withdraw .boxQuick .boxQuicks span {
+    font-weight: 500;
+    font-size: 31px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.transfer {
+    position: absolute;
+    display: none;
+    margin-left: 281px;
+}
+
+.transfer .boxy  {
+    color: white;
+    display: flex
+}
+
+.transfer .boxBalance {
+    margin-top: 53px;
+    margin-left: 40px;
+    width: 425px;
+    height: 176px;
+    background-color: #353745;
+    border-radius: 25px;
+}
+
+.transfer .depositInput {
+    color: white;
+}
+
+.transfer .boxBalance input {
+    padding-top: 0.6em;
+    /* padding-left: 2.5em; */
+    width: 100%;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+}
+
+.transfer .boxBalance input::-webkit-outer-spin-button,
+.transfer .boxBalance input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.transfer .boxBalance input::placeholder {
+    color: white;
+    -webkit-appearance: none; 
+}
+
+.transfer .boxBalance p {
+    color: #C5C5C5;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.transfer .boxBalance .boxBalance-Title {
+    display: flex;
+}
+
+
+.transfer .boxBalance {
+    margin-top: 53px;
+    margin-left: 40px;
+    width: 425px;
+    height: 176px;
+    background-color: #353745;
+    border-radius: 25px;
+}
+
+.transfer .boxBalance h1 {
+    padding-top: 0.3em;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.transfer .boxBalance p {
+    color: #C5C5C5;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.transfer .boxBalance .boxBalance-Title {
+    display: flex;
+}
+
+.transfer .boxBalance .ptitle {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 15px;
+    float: left;
+    display: flex;
+}
+
+.transfer .boxBalance .p1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 15px;
+    float: left;
+}
+
+.transfer .boxBalance .p2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 75px;
+    margin-top: 15px;
+    float: right;
+}
+
+
+.transfer .boxQuick {
+    margin-left: 43px;
+    margin-top: 60px;
+    width: 933px;
+    height: 446px;
+    background-color: #353745;
+    color: white;
+    border-radius: 25px;
+}
+
+.transfer .boxQuick .titleQuick {
+    display: flex;
+}
+
+.transfer .boxQuick .titleQuick .boxQ {
+    float: left;
+    width: 280px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.transfer .boxQuick .titleQuick .boxQ {
+    float: right;
+    width: 280px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.transfer .boxQuick .titleQuick span {
+    font-weight: 500;
+    font-size: 31px;
+}
+
+.transfer #secondBox {
+    margin-left: 320px;
+}
+
+.transfer .boxQuick .boxQuicks {
+    display: block;
+}
+
+.transfer .boxQuick .boxQuicks .leftQuick .boxx {
+    /* float: left; */
+    width: 300px;
+    height: 50px;
+    margin-left: 320px;
+    margin-top: 30px;
+    background: #3E4054;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.transfer .boxQuick .boxQuicks .leftQuick .boxx:first-child {
+    margin-bottom: 50px;
+}
+
+.transfer .boxQuick .boxQuicks .leftQuick .boxx:hover {
+    background: #6d7093;
+}
+
+.transfer .boxQuick .boxQuicks .leftQuick .boxx p {
+    color: #C5C5C5;
+    margin-top: 6px;
+}
+
+.transfer .boxQuick .boxQuicks span {
+    font-weight: 500;
+    font-size: 31px;
+}
+
+
+
+.transfer .boxx {
+    color: white;
+}
+
+.transfer .boxx input {
+    padding-top: 0.25em;
+    /* padding-left: 2.5em; */
+    width: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+}
+
+.transfer .boxx input::-webkit-outer-spin-button,
+.transfer .boxx input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.transfer .boxx input::placeholder {
+    color: white;
+    -webkit-appearance: none; 
+}
+
+.transfer .boxQuick .boxQuicks .btnTransfer {
+    width: 180px;
+    height: 40px;
+    background: #fb0d5a ;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 12px;
+    margin-left: 380px;
+    margin-top: 60px;
+}
+
+.transfer .boxQuick .boxQuicks .btnTransfer:hover {
+    background: #4f93ff;
+}
+
+
+
+
+
+
+
+
+@keyframes Push {
+    0% {
+      opacity: 0.0;
+    }
+    100% {
+      opacity: 1.0;
+    }
+  }
+  
+  @keyframes Out {
+    0% {
+      opacity: 1.0;
+    }
+    100% {
+      opacity: 0.0;
+    }
+  }
+
+
+notification-box {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+
+.toast-enter {
+  animation: Push 1s ease;
+}
+.toast-leave {
+  animation: Out 1s ease;
+}
+
+.notification-warn {
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 40% !important;
+    padding: 10px;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background: #272833;
+    font-size: 22px;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    vertical-align: middle;
+}
+
+.notification-success {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 40% !important;
+  padding: 10px;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background: #272833;
+  font-size: 22px;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 1em rgb(0, 0, 0);
+  vertical-align: middle;
+}

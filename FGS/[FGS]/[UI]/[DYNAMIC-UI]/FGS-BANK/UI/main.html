@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FGS Bank</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+      
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="mainscreen">
+    <div class="sidebar">
+      <div class="sidebar-main">
+        <div class="sidebar-user">
+          <p>Bank Of<span style="color: #fb0d5a ;"> FGS</span></p>
+        </div>
+      </div>
+         
+      <div class="sidebar-menu">
+        <ul>
+          <li class="list active">
+            <a onclick="openMain()">
+              <span class="icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.55 2.533a2.25 2.25 0 0 1 2.9 0l6.75 5.695c.508.427.8 1.056.8 1.72v9.802a1.75 1.75 0 0 1-1.75 1.75h-3a1.75 1.75 0 0 1-1.75-1.75v-5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75v5a1.75 1.75 0 0 1-1.75 1.75h-3A1.75 1.75 0 0 1 3 19.75V9.947c0-.663.292-1.292.8-1.72l6.75-5.694Z" fill="#fff"/></svg></span> 
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a onclick="openDeposit()">
+              <span class="icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.25 6.045V5.75A2.75 2.75 0 0 0 16.5 3H5.25a2.25 2.25 0 0 0-2.244 2.409A.757.757 0 0 0 3 5.5v12.25A3.25 3.25 0 0 0 6.25 21h12.5a2.75 2.75 0 0 0 2.75-2.75v-9.5a2.75 2.75 0 0 0-2.25-2.705ZM5.25 4.5H16.5c.69 0 1.25.56 1.25 1.25V6H5.25a.75.75 0 0 1 0-1.5Zm11 8.5h2a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5Z" fill="#fff"/></svg></span>
+              <span class="title">Deposit</span>
+            </a>
+          </li>
+          <li class="list">
+            <a onclick="openWithdraw()">
+              <span class="icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 6.75C2 5.784 2.784 5 3.75 5h13.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 17.25 17H3.75A1.75 1.75 0 0 1 2 15.25v-8.5Zm3-.5v1a.75.75 0 0 1-.75.75h-1v1.5h1A2.25 2.25 0 0 0 6.5 7.25v-1H5Zm5.5 7.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Zm-7.25.5h1a.75.75 0 0 1 .75.75v1h1.5v-1a2.25 2.25 0 0 0-2.25-2.25h-1V14Zm12.75.75a.75.75 0 0 1 .75-.75h1v-1.5h-1a2.25 2.25 0 0 0-2.25 2.25v1H16v-1Zm0-7.5v-1h-1.5v1a2.25 2.25 0 0 0 2.25 2.25h1V8h-1a.75.75 0 0 1-.75-.75Z" fill="#fff"/><path d="M4.401 18.5A2.999 2.999 0 0 0 7 20h10.25A4.75 4.75 0 0 0 22 15.25V10c0-1.11-.603-2.08-1.5-2.599v7.849a3.25 3.25 0 0 1-3.25 3.25H4.401Z" fill="#fff"/></svg></span>
+              <span class="title">Withdraw</span>
+            </a>
+          </li>
+          <li class="list">
+            <a onclick="openTransfer()">
+              <span class="icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m6.288 4.293-3.995 4-.084.095a1 1 0 0 0 .084 1.32l.095.083a1 1 0 0 0 1.32-.084L6 7.41V19l.007.117a1 1 0 0 0 .993.884l.117-.007A1 1 0 0 0 8 19V7.417l2.293 2.29.095.084a1 1 0 0 0 1.319-1.499l-4.006-4-.094-.083a1 1 0 0 0-1.32.084ZM17 4.003l-.117.007a1 1 0 0 0-.883.993v11.58l-2.293-2.29-.095-.084a1 1 0 0 0-1.319 1.498l4.004 4 .094.084a1 1 0 0 0 1.32-.084l3.996-4 .084-.095a1 1 0 0 0-.084-1.32l-.095-.083a1 1 0 0 0-1.32.084L18 16.587V5.003l-.007-.116A1 1 0 0 0 17 4.003Z" fill="#fff"/></svg></span>
+              <span class="title">Transfer</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+     </div>
+
+
+      <div class="line"></div>
+
+      <div class="main">
+          <div class="boxy">
+            <div class="boxBalance">
+                <h1 class="TotalBalance">£10,000</h1>
+                <p>Total Balance</p>
+            </div>
+            <div style="margin-left:83px;" class="boxBalance">
+                <div class="boxBalance-Title">
+                    <p class="ptitle">**** **** **** ****</p>
+                </div>
+                <img style="margin-top:5px;"src="https://media.discordapp.net/attachments/663504794475954198/910672881237782558/Vect1or.png">
+                <img style="margin-top:3px;"src="https://media.discordapp.net/attachments/663504794475954198/910672881237782558/Vect1or.png">
+
+              <p class="p1" id="playername">Cameron Lennard</p>
+              <p class="p2" id="user_id">1</p>
+
+           </div>
+          </div>
+
+          <div class="boxQuick">
+              <div class="titleQuick">
+                <div class="leftTitleQuick">
+                    <div class="boxQ" id="secondBox"><span>Quick Deposit</span></div>
+                  </div>
+                  <div class="rightTitleQuick">
+                    <div class="boxQ" id="firstBox"><span>Quick Withdraw</span></div>
+                  </div>
+              </div>
+
+              <div class="boxQuicks">
+                  <div style="color: #1ED760;" class="leftQuick">
+                    <div onclick="QuickDeposit(500)" class="boxx"><span>£500</span></div>
+                    <div onclick="QuickDeposit(1000)" class="boxx"><span>£1,000</span></div>
+                    <div onclick="QuickDeposit(5000)" class="boxx"><span>£5,000</span></div>
+                  </div>
+                  <div style="color: #E3507A;" class="rightQuick">
+                    <div onclick="QuickWithdraw(500)" class="boxx"><span>£500</span></div>
+                    <div onclick="QuickWithdraw(1000)" class="boxx"><span>£1,000</span></div>
+                    <div onclick="QuickWithdraw(5000)" class="boxx"><span>£5,000</span></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- DEPOSIT -->
+      <div class="deposit">
+        <div class="boxy">
+          <div class="boxBalance">
+              <div class="depositInput">
+                <input id="amountDeposit" type="number" placeholder="Enter Amount">
+              </div>
+              <p onclick="DepositMoney()" style="color: #1971FB;">DEPOSIT</p>
+          </div>
+          <div style="margin-left:83px;" class="boxBalance">
+              <div class="boxBalance-Title">
+                <p class="ptitle"><a class="TotalBalance"></a></p>
+              </div>
+              <img style="margin-top:35px;"src="https://media.discordapp.net/attachments/663504794475954198/910672881237782558/Vect1or.png">
+
+              <p class="p1" id="playername">Cameron Lennard</p>
+              <p class="p2" id="user_id">1</p>
+         </div>
+        </div>
+
+        <div class="boxQuick">
+            <div class="titleQuick">
+              <div class="leftTitleQuick">
+                  <div class="boxQ" id="secondBox"><span>Quick Deposit</span></div>
+                </div>
+            </div>
+
+            <div class="boxQuicks">
+                <div style="color: #1ED760;" class="leftQuick">
+                  <div onclick="QuickDeposit(500)" class="boxx"><span>£500</span></div>
+                  <div onclick="QuickDeposit(5000)" class="boxx"><span>£5,000</span></div>
+                  <div onclick="QuickDeposit(25000)" class="boxx"><span>£25,000</span></div>
+                </div>
+                <div style="color: #1ED760;" class="rightQuick">
+                  <div onclick="QuickDeposit(1000)" class="boxx"><span>£1,000</span></div>
+                  <div onclick="QuickDeposit(10000)" class="boxx"><span>£10,000</span></div>
+                  <div onclick="QuickDeposit(500000)" class="boxx"><span>£50,0000</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WITHDRAW -->
+    <div class="withdraw">
+        <div class="boxy">
+          <div class="boxBalance">
+              <div class="depositInput">
+                <input id="amountWithdraw" type="number" placeholder="Enter Amount">
+              </div>
+              <p onclick="WithdrawMoney() "style="color: #1971FB;">WITHDRAW</p>
+          </div>
+          <div style="margin-left:83px;" class="boxBalance">
+              <div class="boxBalance-Title">
+                <p class="ptitle"><a class="TotalBalance"></a></p>
+              </div>
+              <img style="margin-top:35px;"src="https://media.discordapp.net/attachments/663504794475954198/910672881237782558/Vect1or.png">
+
+              <p class="p1" id="playername">Cameron Lennard</p>
+              <p class="p2" id="user_id">1</p>
+         </div>
+        </div>
+
+        <div class="boxQuick">
+            <div class="titleQuick">
+              <div class="leftTitleQuick">
+                  <div class="boxQ" id="secondBox"><span>Quick Withdraw</span></div>
+                </div>
+            </div>
+
+            <div class="boxQuicks">
+                <div style="color: #E3507A;" class="leftQuick">
+                  <div onclick="QuickWithdraw(500)"class="boxx"><span>£500</span></div>
+                  <div onclick="QuickWithdraw(5000)"class="boxx"><span>£5,000</span></div>
+                  <div onclick="QuickWithdraw(25000)"class="boxx"><span>£25,000</span></div>
+                </div>
+                <div style="color: #E3507A;" class="rightQuick">
+                  <div onclick="QuickWithdraw(1000)"class="boxx"><span>£1,000</span></div>
+                  <div onclick="QuickWithdraw(10000)"class="boxx"><span>£10,000</span></div>
+                  <div onclick="QuickWithdraw(500000)"class="boxx"><span>£500,000</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- TRANSFER -->
+    <div class="transfer">
+        <div class="boxy">
+            <div class="boxBalance">
+                <h1 class="TotalBalance">£10.000</h1>
+                <p>Total Balance</p>
+            </div>
+          <div style="margin-left:83px;" class="boxBalance">
+              <div class="boxBalance-Title">
+                  <p class="ptitle">**** **** **** ****</p>
+              </div>
+              <img style="margin-top:35px;"src="https://media.discordapp.net/attachments/663504794475954198/910672881237782558/Vect1or.png">
+
+              <p class="p1" id="playername">Cameron Lennard</p>
+              <p class="p2" id="user_id">1</p>
+         </div>
+        </div>
+
+        <div class="boxQuick">
+            <div class="titleQuick">
+              <div class="leftTitleQuick">
+                  <div class="boxQ" id="secondBox"><span>Transfer Money</span></div>
+                </div>
+            </div>
+
+            <div class="boxQuicks">
+                <div style="color: #E3507A;" class="leftQuick">
+                  <div class="boxx"><input id="transferID" type="number" placeholder="Enter ID"><p>Player ID</p></div>
+
+                  <div class="boxx"><input id="amountTransfer" type="number" placeholder="Enter Amount"><p>Amount</p></div>
+                </div>
+                <div class="btnTransfer">
+                    <p onclick="TransferMoney()" style="padding-top: 5px;">TRANSFER</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <notification-box class="notifiaction-box"></notification-box>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+
+    <script>
+      
+var index = 0, maxOpened = 3;
+var toasts = [];
+function showNotify(message, type) {
+  var toast = {}
+  toast.id = index++;
+  if (type == 'warn') {
+    toast.code = '<div id="toast-'+toast.id+'" class="notification-warn">'+
+      '<svg style="margin-left: 10px;" width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.523 0 10 4.478 10 10s-4.477 10-10 10S2 17.522 2 12 6.477 2 12 2Zm.002 13.004a.999.999 0 1 0 0 1.997.999.999 0 0 0 0-1.997ZM12 7a1 1 0 0 0-.993.884L11 8l.002 5.001.007.117a1 1 0 0 0 1.986 0l.007-.117L13 8l-.007-.117A1 1 0 0 0 12 7Z" fill="#E3507A"/></svg> <span style="margin-left:10px; color:#E3507A;">'+message+'</span>' +
+    '</div>';
+  } else if (type == 'success') {
+    toast.code = '<div id="toast-'+toast.id+'" class="notification-success">'+
+    '<svg style="margin-left: 10px;" width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m8.5 16.586-3.793-3.793a1 1 0 0 0-1.414 1.414l4.5 4.5a1 1 0 0 0 1.414 0l11-11a1 1 0 0 0-1.414-1.414L8.5 16.586Z" fill="#1ED760"/></svg> <span style="margin-left:10px; color:#1ED760;">'+message+'</span>' +
+    '</div>';
+  }
+ 
+  if (maxOpened && toasts.length >= maxOpened) {
+    remove(toasts[0].id)
+  }
+
+  toasts.push(toast);
+  $(toast.code).appendTo('notification-box')
+  $('#toast-'+toast.id).addClass('toast-enter');
+
+  setTimeout(function(){
+    $('#toast-'+toast.id).removeClass('toast-enter');
+    remove(toast.id);
+  }, 3000);
+}
+
+function remove(id) {
+  var toast = findToast(id);
+
+  if (toast) {
+      $('#toast-'+id).addClass('toast-leave')
+      setTimeout(function() {
+      $('#toast-'+id).css('display', 'none');
+      $('#toast-'+id).remove();
+      }, 500);
+      var index = toasts.indexOf(toast)
+      toasts.splice(index, 1)
+    }
+    
+  function findToast(toastId) {
+    for (var i = 0; i < toasts.length; i++) {
+      if (toasts[i].id == id) {
+        return toasts[i]
+      }
+    }
+  }
+}
+    </script>
+
+    <script>
+    (function () {
+    let status = [];
+	  let renderStatus = function () {
+
+		for (let i = 0; i < status.length; i++) {
+			if (!status[i].visible) {
+				continue;
+        }
+		  }  
+	  };
+
+	window.onData = function (data) {
+		if (data.update) {
+			status.length = 0;
+
+			for (let i = 0; i < data.status.length; i++) {
+				status.push(data.status[i]);
+			}
+			renderStatus();
+		}
+
+        
+    if (data.display == true) {
+			$(".mainscreen").show();
+    }
+    if (data.display == false) {
+			$(".mainscreen").fadeOut(30);
+		}
+
+	};
+
+	window.onload = function (e) {
+		  window.addEventListener('message', function (event) {
+					if(event.data.type === "UpdateBalance") {
+						$('.TotalBalance').html(event.data.totalbalance);
+            $('.p2').html(event.data.id);
+            $('.p1').html(event.data.name);
+					}
+          if (event.data.name == "addNotification"){
+            showNotify(event.data.message, event.data.type);
+          }
+		  	onData(event.data);
+		  });
+    };
+  })();
+
+
+$(document).keyup(function (e) {
+		  if (e.key === "Escape") {
+		  	$(".mainscreen").fadeOut(300);
+		  	$.post('https://FGS-BANK/focusOff');
+		  }
+	  }); 
+
+    let list = document.querySelectorAll('.list');
+    for (let i = 0; i < list.length; i++ ) {
+      list[i].onclick = function() {
+        let j=0;
+        while(j < list.length) {
+          list[j++].className = 'list';
+        };
+        list[i].className = 'list active';
+      };
+    };
+
+    function test() {
+      showNotify("Successfully withdrawn £23333", "warn");
+      showNotify("Successfully deposit £23333", "success");
+		}
+
+
+    function QuickDeposit(amountQuickDeposit) {
+      $.post('https://FGS-BANK/FGS-depositMoney', JSON.stringify({amountDeposit: amountQuickDeposit}));
+		}
+
+    function QuickWithdraw(amountQuickWithdraw) {
+      $.post('https://FGS-BANK/FGS-withdrawMoney', JSON.stringify({amountWithdraw: amountQuickWithdraw}));
+		}
+
+    function DepositMoney() {
+      $.post('https://FGS-BANK/FGS-depositMoney', JSON.stringify({amountDeposit: $("#amountDeposit").val()}));
+		}
+
+    function WithdrawMoney() {
+      $.post('https://FGS-BANK/FGS-withdrawMoney', JSON.stringify({amountWithdraw: $("#amountWithdraw").val()}));
+		}
+
+    function TransferMoney() {
+      $.post('https://FGS-BANK/FGS-transferMoney', JSON.stringify({receiver:  $("#transferID").val(), amountTransfer: $("#amountTransfer").val()}));
+		}
+    
+
+  function openMain() {
+    $('.deposit').css({ 'display': 'none' });
+    $('.withdraw').css({ 'display': 'none' });
+    $('.transfer').css({ 'display': 'none' });
+    $('.main').css({ 'display': 'block' });
+	}
+
+  function openDeposit() {
+    $('.main').css({ 'display': 'none' });
+    $('.withdraw').css({ 'display': 'none' });
+    $('.transfer').css({ 'display': 'none' });
+    $('.deposit').css({ 'display': 'block' });
+	}
+
+  function openWithdraw() {
+    $('.main').css({ 'display': 'none' });
+    $('.deposit').css({ 'display': 'none' });
+    $('.transfer').css({ 'display': 'none' });
+    $('.withdraw').css({ 'display': 'block' });
+	}
+
+  function openTransfer() {
+    $('.main').css({ 'display': 'none' });
+    $('.deposit').css({ 'display': 'none' });
+    $('.withdraw').css({ 'display': 'none' });
+    $('.transfer').css({ 'display': 'block' });
+	}
+    </script>
+   </body>
+</html>

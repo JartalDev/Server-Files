@@ -1,0 +1,11 @@
+fx_version 'cerulean'
+games { 'gta5' }
+author 'GRP'
+file 'stream/metpd/v_kitch.ytyp'
+data_file 'DLC_ITYP_REQUEST' 'stream/metpd/int_corporate.ytyp'
+data_file 'DLC_ITYP_REQUEST' 'stream/metpd/v_kitch.ytyp'
+data_file 'INTERIOR_PROXY_ORDER_FILE' 'stream/metpdinteriorproxies.meta'
+client_script 'client.lua'
+file 'gabz_timecycle_mods_1.xml'
+data_file 'TIMECYCLEMOD_FILE' 'gabz_timecycle_mods_1.xml'
+this_is_a_map 'yes'

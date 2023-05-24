@@ -1,0 +1,50 @@
+{
+  "PhoneAsItem": {
+    "enabled": false,
+    "exportResource": "my-core-resource",
+    "exportFunction": "myCheckerFunction"
+  },
+  "general": {
+    "useResourceIntegration": false,
+    "toggleKey": "f1"
+  },
+  "database": {
+    "useIdentifierPrefix": true,
+    "playerTable": "vrp_users2",
+    "identifierColumn": "identifier",
+    "identifierType": "license",
+    "profileQueries": true,
+    "phoneNumberColumn": "number"
+  },
+  "images": {
+    "url": "https://api.imgur.com/3/image",
+    "type": "imgur",
+    "imageEncoding": "jpg",
+    "contentType": "multipart/form-data",
+    "authorizationPrefix": "afecf4c8ad68728",
+    "useAuthorization": true,
+    "returnedDataIndexes": ["data", "link"]
+  },
+  "twitter": {
+    "showNotifications": true,
+    "generateProfileNameFromUsers": true,
+    "allowEditableProfileName": true,
+    "allowDeleteTweets": true,
+    "allowReportTweets": true,
+    "characterLimit": 160,
+    "newLineLimit": 10,
+    "enableAvatars": true,
+    "enableEmojis": true,
+    "enableImages": true,
+    "maxImages": 3
+  },
+  "match": {
+    "generateProfileNameFromUsers": true,
+    "allowEditableProfileName": true
+  },
+  "debug": {
+    "level": "false",
+    "enabled": false,
+    "sentryEnabled": false
+  }
+}
